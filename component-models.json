@@ -203,6 +203,49 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "herobanner",
+    "fields": [
+      {
+        "component": "select",
+        "name": "upload type",
+        "value": "arch",
+        "label": "Upload Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "image",
+            "value": "image"
+          },
+          {
+            "name": "video",
+            "value": "video"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "Color",
+        "value": "grey",
+        "label": "Banner Color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Grey",
+            "value": "grey"
+          },
+          {
+            "name": "Blue",
+            "value": "blue"
+          },
+          {
+            "name": "Teal",
+            "value": "teal"
+          }
+        ]
+      }
+    ]
   }
    
 ]
