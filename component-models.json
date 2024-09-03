@@ -260,29 +260,29 @@
       },
       {
         "component": "select",
-          "name": "headline type",
-          "value": "",
-          "label": "Headline Type",
-          "valueType": "string",
-          "options": [
-            {
-              "name": "h1",
-              "value": "h1"
-            }
-          ]
+        "name": "headline type",
+        "value": "",
+        "label": "Headline Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          }
+        ]
       },
       {
         "component": "select",
-          "name": "Alignment",
-          "value": "",
-          "label": "Text Alignment",
-          "valueType": "string",
-          "options": [
-            {
-              "name": "Left",
-              "value": "left"
-            }
-          ]
+        "name": "Alignment",
+        "value": "",
+        "label": "Text Alignment",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          }
+        ]
       },
       {
         "component": "richtext",
@@ -293,17 +293,17 @@
       },
       {
         "component": "aem-content",
-        "name": "heroteaser_link",
+        "name": "heroteaser link",
         "label": "CTA Link"
       },
       {
         "component": "text",
-        "name": "heroteaser_linkText",
+        "name": "heroteaser linkText",
         "label": "CTA Text"
       },
       {
         "component": "select",
-        "name": "heroteaser_linkType",
+        "name": "heroteaser linkType",
         "label": "CTA Type",
         "options": [
           {
