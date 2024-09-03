@@ -205,22 +205,22 @@
     ]
   },
   {
-    "id": "herobanner",
+    "id": "heroteaser",
     "fields": [
       {
         "component": "select",
-        "name": "upload type",
+        "name": "teaser type",
         "value": "arch",
-        "label": "Upload Type",
+        "label": "Teaser Type",
         "valueType": "string",
         "options": [
           {
-            "name": "image",
-            "value": "image"
+            "name": "Arch",
+            "value": "arch"
           },
           {
-            "name": "video",
-            "value": "video"
+            "name": "No Arch",
+            "value": "no arch"
           }
         ]
       },
@@ -228,7 +228,7 @@
         "component": "select",
         "name": "Color",
         "value": "grey",
-        "label": "Banner Color",
+        "label": "Teaser Color",
         "valueType": "string",
         "options": [
           {
@@ -236,12 +236,91 @@
             "value": "grey"
           },
           {
+            "name": "Gradient Grey",
+            "value": "gradient grey"
+          },
+          {
             "name": "Blue",
             "value": "blue"
           },
           {
-            "name": "Teal",
-            "value": "teal"
+            "name": "Yellow",
+            "value": "yellow"
+          },
+          {
+            "name": "Black",
+            "value": "black"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "headline text",
+        "label": "Headline text"
+      },
+      {
+        "component": "select",
+          "name": "headline type",
+          "value": "",
+          "label": "Headline Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            }
+          ]
+      },
+      {
+        "component": "select",
+          "name": "Alignment",
+          "value": "",
+          "label": "Text Alignment",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Left",
+              "value": "left"
+            }
+          ]
+      },
+      {
+        "component": "richtext",
+        "name": "supporting copy",
+        "value": "",
+        "label": "Supporting Copy",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "heroteaser_link",
+        "label": "CTA Link"
+      },
+      {
+        "component": "text",
+        "name": "hearoteaser_linkText",
+        "label": "CTA Text"
+      },
+      {
+        "component": "select",
+        "name": "heroteaser_linkType",
+        "label": "CTA Type",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "primary",
+            "value": "primary"
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          },
+          {
+            "name": "Tertiary",
+            "value": "tertiary"
           }
         ]
       }
