@@ -298,7 +298,7 @@
       },
       {
         "component": "text",
-        "name": "hearoteaser_linkText",
+        "name": "heroteaser_linkText",
         "label": "CTA Text"
       },
       {
