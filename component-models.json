@@ -209,7 +209,7 @@
     "fields": [
       {
         "component": "select",
-        "name": "teasertype",
+        "name": "teaser_type",
         "value": "arch",
         "label": "Teaser Type",
         "valueType": "string",
@@ -226,7 +226,7 @@
       },
       {
         "component": "select",
-        "name": "Color",
+        "name": "color",
         "value": "grey",
         "label": "Teaser Color",
         "valueType": "string",
@@ -255,12 +255,12 @@
       },
       {
         "component": "text",
-        "name": "headlinetext",
+        "name": "headline_text",
         "label": "Headline text"
       },
       {
         "component": "select",
-        "name": "headlinetype",
+        "name": "headline_type",
         "value": "",
         "label": "Headline Type",
         "valueType": "string",
@@ -273,7 +273,7 @@
       },
       {
         "component": "select",
-        "name": "Alignment",
+        "name": "alignment",
         "value": "",
         "label": "Text Alignment",
         "valueType": "string",
@@ -286,24 +286,24 @@
       },
       {
         "component": "richtext",
-        "name": "supportingcopy",
+        "name": "supporting_copy",
         "value": "",
         "label": "Supporting Copy",
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "heroteaserlink",
+        "name": "hero_teaser_link",
         "label": "CTA Link"
       },
       {
         "component": "text",
-        "name": "heroteaserlinkText",
+        "name": "hero_teaser_link_text",
         "label": "CTA Text"
       },
       {
         "component": "select",
-        "name": "heroteaserlinkType",
+        "name": "hero_teaser_link_type",
         "label": "CTA Type",
         "options": [
           {
