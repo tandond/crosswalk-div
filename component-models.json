@@ -290,16 +290,6 @@
         "value": "",
         "label": "Supporting Copy",
         "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "hero_teaser_link",
-        "label": "CTA Link"
-      },
-      {
-        "component": "text",
-        "name": "hero_teaser_link_text",
-        "label": "CTA Text"
       }
     ]
   }
