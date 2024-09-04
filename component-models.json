@@ -270,61 +270,7 @@
             "value": "h1"
           }
         ]
-      },
-      {
-        "component": "select",
-        "name": "alignment",
-        "value": "",
-        "label": "Text Alignment",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Left",
-            "value": "left"
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "supporting_copy",
-        "value": "",
-        "label": "Supporting Copy",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "hero_teaser_link",
-        "label": "CTA Link"
-      },
-      {
-        "component": "text",
-        "name": "hero_teaser_link_text",
-        "label": "CTA Text"
-      },
-      {
-        "component": "select",
-        "name": "hero_teaser_link_type",
-        "label": "CTA Type",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          },
-          {
-            "name": "Tertiary",
-            "value": "tertiary"
-          }
-        ]
       }
     ]
   }
-   
 ]
