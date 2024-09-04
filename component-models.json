@@ -208,48 +208,58 @@
     "id": "heroteaser",
     "fields": [
       {
-        "component": "select",
-        "name": "heroteaser_type",
-        "value": "arch",
-        "label": "Teaser Type",
+        "component": "multiselect",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser Style",
         "valueType": "string",
         "options": [
           {
-            "name": "Arch",
-            "value": "arch"
+            "name": "heroteaser_type",
+            "children": [
+              {
+                "name": "Arch",
+                "value": "arch"
+              },
+              {
+                "name": "No Arch",
+                "value": "no arch"
+              }
+            ] 
           },
           {
-            "name": "No Arch",
-            "value": "no arch"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "heroteaser_color",
-        "value": "grey",
-        "label": "Teaser Color",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Grey",
-            "value": "grey"
+            "name": "Teaser Color",
+            "children": [
+              {
+                "name": "Grey",
+                "value": "grey"
+              },
+              {
+                "name": "Gradient Grey",
+                "value": "gradient grey"
+              },
+              {
+                "name": "Blue",
+                "value": "blue"
+              },
+              {
+                "name": "Yellow",
+                "value": "yellow"
+              },
+              {
+                "name": "Black",
+                "value": "black"
+              }
+            ]
           },
           {
-            "name": "Gradient Grey",
-            "value": "gradient grey"
-          },
-          {
-            "name": "Blue",
-            "value": "blue"
-          },
-          {
-            "name": "Yellow",
-            "value": "yellow"
-          },
-          {
-            "name": "Black",
-            "value": "black"
+            "name": "Alignment",
+            "children": [
+              {
+                "name": "Left",
+                "value": "left"
+              }
+            ]
           }
         ]
       },
@@ -273,16 +283,29 @@
       },
       {
         "component": "select",
-        "name": "heroteaser_alignment",
-        "value": "",
-        "label": "Text Alignment",
-        "valueType": "string",
+        "name": "heroteaser_assetType",
+        "label": "Asset Type",
         "options": [
           {
-            "name": "Left",
-            "value": "left"
+            "name": "image",
+            "value": "image"
+          },
+          {
+            "name": "video",
+            "value": "video"
           }
         ]
+      },
+      {
+        "component": "reference",
+        "name": "heroteaser_asset",
+        "label": "Asset (image/video)",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "heroteaser_assetAlt",
+        "label": "Alt Text"
       },
       {
         "component": "aem-content",
@@ -322,6 +345,12 @@
         "name": "heroteaser_copy",
         "value": "",
         "label": "Supporting Copy"
+      },
+      {
+        "component": "richtext",
+        "name": "heroteaser_small_copy",
+        "value": "",
+        "label": "Small Body Copy"
       }
     ]
   }
