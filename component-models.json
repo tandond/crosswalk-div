@@ -286,42 +286,8 @@
       },
       {
         "component": "aem-content",
-        "name": "hero_teaser_link",
-        "label": "CTA Link",
-        "value": "",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "hero_teaser_link_text",
-        "label": "CTA Text",
-        "value": "",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "hero_teaser_link_type",
-        "label": "CTA Type",
-        "value": "",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          },
-          {
-            "name": "tertiary",
-            "value": "tertiary"
-          }
-        ]
+        "name": "teaser_link",
+        "label": "CTA Link"
       }
     ]
   }
