@@ -286,12 +286,12 @@
       },
       {
         "component": "aem-content",
-        "name": "heroteaser_teaser_link",
+        "name": "heroteaser_link",
         "label": "CTA Link"
       },
       {
         "component": "text",
-        "name": "heroteaser_teaser_linktext",
+        "name": "heroteaser_linktext",
         "label": "CTA Text"
       },
       {
@@ -316,6 +316,12 @@
             "value": "tertiary"
           }
         ]
+      },
+      {
+        "component": "richtext",
+        "name": "heroteaser_copy",
+        "value": "",
+        "label": "Supporting Copy"
       }
     ]
   }
