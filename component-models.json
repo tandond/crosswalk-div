@@ -319,7 +319,7 @@
       },
       {
         "component": "richtext",
-        "name": "supporting_copy",
+        "name": "copy",
         "value": "",
         "label": "Supporting Copy",
         "valueType": "string"
