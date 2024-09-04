@@ -316,13 +316,6 @@
             "value": "tertiary"
           }
         ]
-      },
-      {
-        "component": "richtext",
-        "name": "copy",
-        "value": "",
-        "label": "Supporting Copy",
-        "valueType": "string"
       }
     ]
   }
