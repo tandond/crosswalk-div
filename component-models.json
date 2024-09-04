@@ -288,6 +288,11 @@
         "component": "aem-content",
         "name": "teaser_link",
         "label": "CTA Link"
+      },
+      {
+        "component": "text",
+        "name": "teaser_linktext",
+        "label": "CTA Text"
       }
     ]
   }
