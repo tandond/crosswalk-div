@@ -293,6 +293,29 @@
         "component": "text",
         "name": "teaser_linktext",
         "label": "CTA Text"
+      },
+      {
+        "component": "select",
+        "name": "teaser_linktype",
+        "label": "CTA Type",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "primary",
+            "value": "primary"
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          },
+          {
+            "name": "tertiary",
+            "value": "tertiary"
+          }
+        ]
       }
     ]
   }
