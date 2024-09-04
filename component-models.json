@@ -205,13 +205,13 @@
     ]
   },
   {
-    "id": "herobanner",
+    "id": "heroteaser",
     "fields": [
       {
         "component": "select",
-        "name": "banner_type",
+        "name": "teaser_type",
         "value": "arch",
-        "label": "Banner Type",
+        "label": "Teaser Type",
         "valueType": "string",
         "options": [
           {
@@ -228,7 +228,7 @@
         "component": "select",
         "name": "color",
         "value": "grey",
-        "label": "Banner Color",
+        "label": "Teaser Color",
         "valueType": "string",
         "options": [
           {
