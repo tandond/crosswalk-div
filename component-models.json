@@ -270,6 +270,19 @@
             "value": "h1"
           }
         ]
+      },
+      {
+        "component": "select",
+        "name": "alignment",
+        "value": "",
+        "label": "Text Alignment",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          }
+        ]
       }
     ]
   }
