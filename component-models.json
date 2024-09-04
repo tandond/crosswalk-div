@@ -209,7 +209,7 @@
     "fields": [
       {
         "component": "select",
-        "name": "teaser type",
+        "name": "teasertype",
         "value": "arch",
         "label": "Teaser Type",
         "valueType": "string",
@@ -255,12 +255,12 @@
       },
       {
         "component": "text",
-        "name": "headline text",
+        "name": "headlinetext",
         "label": "Headline text"
       },
       {
         "component": "select",
-        "name": "headline type",
+        "name": "headlinetype",
         "value": "",
         "label": "Headline Type",
         "valueType": "string",
@@ -286,24 +286,24 @@
       },
       {
         "component": "richtext",
-        "name": "supporting copy",
+        "name": "supportingcopy",
         "value": "",
         "label": "Supporting Copy",
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "heroteaser link",
+        "name": "heroteaserlink",
         "label": "CTA Link"
       },
       {
         "component": "text",
-        "name": "heroteaser linkText",
+        "name": "heroteaserlinkText",
         "label": "CTA Text"
       },
       {
         "component": "select",
-        "name": "heroteaser linkType",
+        "name": "heroteaserlinkType",
         "label": "CTA Type",
         "options": [
           {
