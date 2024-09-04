@@ -209,7 +209,7 @@
     "fields": [
       {
         "component": "select",
-        "name": "teaser_type",
+        "name": "heroteaser_type",
         "value": "arch",
         "label": "Teaser Type",
         "valueType": "string",
@@ -226,7 +226,7 @@
       },
       {
         "component": "select",
-        "name": "color",
+        "name": "heroteaser_color",
         "value": "grey",
         "label": "Teaser Color",
         "valueType": "string",
@@ -255,12 +255,12 @@
       },
       {
         "component": "text",
-        "name": "headline_text",
+        "name": "heroteaser_headline_text",
         "label": "Headline text"
       },
       {
         "component": "select",
-        "name": "headline_type",
+        "name": "heroteaser_headline_type",
         "value": "",
         "label": "Headline Type",
         "valueType": "string",
@@ -273,7 +273,7 @@
       },
       {
         "component": "select",
-        "name": "alignment",
+        "name": "heroteaser_alignment",
         "value": "",
         "label": "Text Alignment",
         "valueType": "string",
@@ -286,12 +286,12 @@
       },
       {
         "component": "aem-content",
-        "name": "teaser_link",
+        "name": "heroteaser_teaser_link",
         "label": "CTA Link"
       },
       {
         "component": "text",
-        "name": "teaser_linktext",
+        "name": "heroteaser_teaser_linktext",
         "label": "CTA Text"
       },
       {
