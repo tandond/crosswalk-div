@@ -286,22 +286,50 @@
         "name": "heroteaser_supportingCopy",
         "value": "",
         "label": "Supporting Copy"
-      },
-      
+      },      
       {
         "component": "aem-content",
-        "name": "heroteaser_link",
-        "label": "CTA Link"
+        "name": "heroteaser_primaryCta",
+        "label": "Primary CTA Link"
       },
       {
         "component": "text",
-        "name": "heroteaser_linkText",
-        "label": "CTA Text"
+        "name": "heroteaser_primaryCtaText",
+        "label": "Primary CTA Text"
       },
       {
         "component": "select",
-        "name": "heroteaser_linktype",
-        "label": "CTA Type",
+        "name": "heroteaser_primaryCtaType",
+        "label": "Primary CTA Type",
+        "options": [
+          {
+            "name": "default/primary",
+            "value": ""
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          },
+          {
+            "name": "tertiary",
+            "value": "tertiary"
+          }
+        ]
+      },
+      {
+        "component": "aem-content",
+        "name": "heroteaser_secondaryCta",
+        "label": "Secondary CTA Link"
+      },
+      {
+        "component": "text",
+        "name": "heroteaser_secondaryCtaText",
+        "label": "Secondary CTA Text"
+      },
+      {
+        "component": "select",
+        "name": "heroteaser_secondaryCtaType",
+        "label": "Secondary CTA Type",
         "options": [
           {
             "name": "default/primary",
