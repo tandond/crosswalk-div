@@ -1,4 +1,38 @@
-import { decorateIcons }  from '../../scripts/aem.js';
+import { decorateIcons } from '../../scripts/aem.js';
+
+const iconLoadingPromises = {};
+async function loadIconSvg(icon, doc = document) {
+  if (!icon) return;
+
+  let svgSprite = doc.getElementById('svg-sprite');
+  if (!svgSprite) {
+    const div = document.createElement('div');
+    div.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" id="svg-sprite" style="display: none"></svg>';
+    svgSprite = div.firstElementChild;
+    doc.body.append(svgSprite);
+  }
+
+  const { iconName } = icon.dataset;
+  if (!iconLoadingPromises[iconName]) {
+    iconLoadingPromises[iconName] = (async () => {
+      const resp = await fetch(icon.src);
+      const temp = document.createElement('div');
+      temp.innerHTML = await resp.text();
+      const svg = temp.querySelector('svg');
+
+      const symbol = document.createElementNS('http://www.w3.org/2000/svg', 'symbol');
+      symbol.id = `icons-sprite-${iconName}`;
+      symbol.setAttribute('viewBox', svg.getAttribute('viewBox'));
+      while (svg.firstElementChild) symbol.append(svg.firstElementChild);
+      svgSprite.append(symbol);
+    })();
+  }
+  await iconLoadingPromises[iconName];
+
+  const temp = document.createElement('div');
+  temp.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg"><use href="#icons-sprite-${iconName}"/></svg>`;
+  icon.replaceWith(temp.firstElementChild);
+}
 
 export function useSvgForIcon(iconSpan) {
   const observer = new IntersectionObserver((entries) => {
