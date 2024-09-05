@@ -211,19 +211,19 @@
         "component": "multiselect",
         "name": "classes",
         "value": "",
-        "label": "Teaser Style",
+        "label": "Hero Teaser Style",
         "valueType": "string",
         "options": [
           {
-            "name": "heroteaser_type",
+            "name": "Teaser Type",
             "children": [
               {
                 "name": "Arch",
-                "value": "arch"
+                "value": "featured"
               },
               {
                 "name": "No Arch",
-                "value": "no arch"
+                "value": "plain"
               }
             ] 
           },
@@ -232,11 +232,11 @@
             "children": [
               {
                 "name": "Grey",
-                "value": "grey"
+                "value": "gray"
               },
               {
                 "name": "Gradient Grey",
-                "value": "gradient grey"
+                "value": "gray-gradient"
               },
               {
                 "name": "Blue",
@@ -309,46 +309,55 @@
       },
       {
         "component": "aem-content",
-        "name": "heroteaser_link",
-        "label": "CTA Link"
+        "name": "heroteaser_primaryCta",
+        "label": "Primary CTA Link"
       },
       {
-        "component": "text",
-        "name": "heroteaser_linktext",
-        "label": "CTA Text"
+          "component": "text",
+          "name": "heroteaser_primaryCtaText",
+          "label": "Primary CTA Text"
       },
       {
-        "component": "select",
-        "name": "teaser_linktype",
-        "label": "CTA Type",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          },
-          {
-            "name": "tertiary",
-            "value": "tertiary"
-          }
-        ]
+          "component": "select",
+          "name": "heroteaser_primaryCtaType",
+          "label": "CTA Type",
+          "value": "primary",
+          "options": [
+              {
+                  "...": "../../models/partials/_button-types.json#/options"
+              }
+          ]
+      },
+      {
+          "component": "aem-content",
+          "name": "heroteaser_secondaryCta",
+          "label": "Secondary CTA Link"
+      },
+      {
+          "component": "text",
+          "name": "heroteaser_secondaryCtaText",
+          "label": "Secondary CTA Text"
+      },
+      {
+          "component": "select",
+          "name": "heroteaser_secondaryCtaType",
+          "label": "CTA Type",
+          "value": "secondary",
+          "options": [
+              {
+                  "...": "../../models/partials/_button-types.json#/options"
+              }
+          ]
       },
       {
         "component": "richtext",
-        "name": "heroteaser_copy",
+        "name": "heroteaser_supportingCopy",
         "value": "",
         "label": "Supporting Copy"
       },
       {
         "component": "richtext",
-        "name": "heroteaser_small_copy",
+        "name": "heroteaser_smallBodyCopy",
         "value": "",
         "label": "Small Body Copy"
       }
