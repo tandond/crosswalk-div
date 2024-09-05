@@ -1,3 +1,17 @@
+import { decorateIcons }  from '../../scripts/aem.js';
+
+export function useSvgForIcon(iconSpan) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        loadIconSvg(entry.target.querySelector('img'));
+        observer.disconnect();
+      }
+    });
+  });
+  observer.observe(iconSpan);
+}
+
 export function createKeyLine(heading) {
   const u = heading.querySelector('u') || document.createElement('u');
   heading.classList.add('keyline');
@@ -32,7 +46,6 @@ export function createSectionArc(section) {
 
   section.append(arcWrapper);
 }
-
 
 function buildHeroTeaser(heading, imgOrVideo, supportingContentEls, buttons, additionalContentEls) {
   createKeyLine(heading);
