@@ -282,6 +282,48 @@
         ]
       },
       {
+        "component": "richtext",
+        "name": "heroteaser_supportingCopy",
+        "value": "",
+        "label": "Supporting Copy"
+      },
+      
+      {
+        "component": "aem-content",
+        "name": "heroteaser_link",
+        "label": "CTA Link"
+      },
+      {
+        "component": "text",
+        "name": "heroteaser_linkText",
+        "label": "CTA Text"
+      },
+      {
+        "component": "select",
+        "name": "heroteaser_linktype",
+        "label": "CTA Type",
+        "options": [
+          {
+            "name": "default/primary",
+            "value": ""
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          },
+          {
+            "name": "tertiary",
+            "value": "tertiary"
+          }
+        ]
+      },  
+      {
+        "component": "richtext",
+        "name": "heroteaser_smallBodyCopy",
+        "value": "",
+        "label": "Small Body Copy"
+      },
+      {
         "component": "select",
         "name": "heroteaser_assetType",
         "label": "Asset Type",
@@ -306,47 +348,6 @@
         "component": "text",
         "name": "heroteaser_assetAlt",
         "label": "Alt Text"
-      },
-      {
-        "component": "aem-content",
-        "name": "heroteaser_link",
-        "label": "CTA Link"
-      },
-      {
-        "component": "text",
-        "name": "heroteaser_linktext",
-        "label": "CTA Text"
-      },
-      {
-        "component": "select",
-        "name": "heroteaser_linktype",
-        "label": "CTA Type",
-        "options": [
-          {
-            "name": "default/primary",
-            "value": ""
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          },
-          {
-            "name": "tertiary",
-            "value": "tertiary"
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "heroteaser_copy",
-        "value": "",
-        "label": "Supporting Copy"
-      },
-      {
-        "component": "richtext",
-        "name": "heroteaser_small_copy",
-        "value": "",
-        "label": "Small Body Copy"
       }
     ]
   }
