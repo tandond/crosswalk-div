@@ -232,7 +232,7 @@
             "children": [
               {
                 "name": "Grey",
-                "value": "gray"
+                "value": "grey"
               },
               {
                 "name": "Gradient Grey",
@@ -309,55 +309,42 @@
       },
       {
         "component": "aem-content",
-        "name": "heroteaser_primaryCta",
-        "label": "Primary CTA Link"
+        "name": "heroteaser_link",
+        "label": "CTA Link"
       },
       {
-          "component": "text",
-          "name": "heroteaser_primaryCtaText",
-          "label": "Primary CTA Text"
+        "component": "text",
+        "name": "heroteaser_linktext",
+        "label": "CTA Text"
       },
       {
-          "component": "select",
-          "name": "heroteaser_primaryCtaType",
-          "label": "CTA Type",
-          "value": "primary",
-          "options": [
-              {
-                  "...": "../../models/partials/_button-types.json#/options"
-              }
-          ]
-      },
-      {
-          "component": "aem-content",
-          "name": "heroteaser_secondaryCta",
-          "label": "Secondary CTA Link"
-      },
-      {
-          "component": "text",
-          "name": "heroteaser_secondaryCtaText",
-          "label": "Secondary CTA Text"
-      },
-      {
-          "component": "select",
-          "name": "heroteaser_secondaryCtaType",
-          "label": "CTA Type",
-          "value": "secondary",
-          "options": [
-              {
-                  "...": "../../models/partials/_button-types.json#/options"
-              }
-          ]
+        "component": "select",
+        "name": "heroteaser_linktype",
+        "label": "CTA Type",
+        "options": [
+          {
+            "name": "default/primary",
+            "value": ""
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          },
+          {
+            "name": "tertiary",
+            "value": "tertiary"
+          }
+        ]
       },
       {
         "component": "richtext",
-        "name": "heroteaser_supportingCopy",
+        "name": "heroteaser_copy",
         "value": "",
         "label": "Supporting Copy"
       },
       {
         "component": "richtext",
-        "name": "heroteaser_smallBodyCopy",
+        "name": "heroteaser_small_copy",
         "value": "",
         "label": "Small Body Copy"
       }
